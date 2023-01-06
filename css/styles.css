@@ -15,10 +15,10 @@ ul {
 }
 :root {
      --title-color: #2E2F42;
- }
- body {
+}
+.body {
     font-family: 'Roboto', sans-serif;
-    color: #434455
+    color: #434455;
 }
 .list {
     list-style: none;
@@ -49,7 +49,7 @@ ul {
 }
 
 .web-studio-link {
-        font-family: 'Raleway';
+        font-family: 'Raleway', sans-serif;
         font-style: normal;
         font-weight: 800;
         font-size: 18px;
@@ -62,7 +62,7 @@ ul {
         
 }
 .link-studio {
-        font-family: 'Raleway';
+        font-family: 'Raleway', sans-serif;
         font-style: normal;
         font-weight: 800;
         font-size: 18px;
@@ -122,10 +122,20 @@ ul {
 /* Slogan */
 
 .slogan {
+        height: 600px;
+        max-width: 1440px;
+        margin-left: auto;
+        margin-right: auto;
         text-align: center;
         justify-content: center;
-        background: #2E2F42;
+        background-image:linear-gradient(to right, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        border: 1px solid #000000;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
+
 .slogan-title {
         font-weight: 700;
         font-size: 56px;
@@ -134,28 +144,32 @@ ul {
         color: #FFFFFF;
         margin-bottom: 48px;
         padding-top: 188px;
-        
+
 }
 .slogan-btn {
-        font-family: 'Roboto', sans-serif; 
         font-style: normal;
         font-weight: 700;
         font-size: 16px;
         line-height: 1.19;
         display: flex;
         display: inline-block;
+        padding-bottom: 188px;
         padding: 16px 32px;
         text-align: center;
         letter-spacing: 0.04em;
         color: #FFFFFF;
         background-color: #4D5AE5;
         cursor: pointer;
-        margin-bottom: 188px;
+        
         
 }
 
 /* Methodologies */
 .content {
+        max-width: 1440px;
+        max-height: 450px;
+        margin-left: auto;
+        margin-right: auto;
 }
 .methodologies {     
 }
@@ -163,13 +177,64 @@ ul {
 .methodologies-list { 
         display: flex;
         flex-direction: row;
-        padding-top: 120px;
-        padding-bottom: 120px;
-        gap: 24px     
+        margin-top: 120px;
+        margin-bottom: 120px;
+        gap: 24px;
+}
+.icon-antena::before {
+        display: inline-block;
+        content:'';
+        width: 264px;
+        height: 112px;
+        background-color: #F4F4FD;
+        background-image: url(../icons/antenna.svg);
+        background-size: 64px;
+        background-repeat: no-repeat;
+        background-position: center;
+        border-radius: 4px;
+        margin-bottom: 8px;
+
+}
+.icon-clock::before {
+        display: inline-block;
+        content: '';
+        width: 264px;
+        height: 112px;
+        background-color: #F4F4FD;
+        background-image: url(../icons/clock.svg);
+        background-size: 64px;
+        background-repeat: no-repeat;
+        background-position: center;
+        border-radius: 4px;
+        margin-bottom: 8px;
+}
+.icon-diagram::before {
+        display: inline-block;
+        content: '';
+        width: 264px;
+        height: 112px;
+        background-color: #F4F4FD;
+        background-image: url(../icons/diagram.svg);
+        background-size: 64px;
+        background-repeat: no-repeat;
+        background-position: center;
+        border-radius: 4px;
+        margin-bottom: 8px;
+}
+.icon-astronaut::before {
+        display: inline-block;
+        content: '';
+        width: 264px;
+        height: 112px;
+        background-color: #F4F4FD;
+        background-image: url(../icons/astronaut.svg);
+        background-size: 64px;
+        background-repeat: no-repeat;
+        background-position: center;
+        border-radius: 4px;
+        margin-bottom: 8px;
 }
 .methodologies-item {
-        width: 264px;
-        height: 104px;
 }
 .methodology-title {
         font-style: normal;
@@ -178,6 +243,8 @@ ul {
         line-height: 1.20;
         letter-spacing: 0.02em;
         color: var(--title-color);
+        width: 264px;
+        height: 24px;
         margin-bottom: 8px;
 }
 .methodology-description {
@@ -187,6 +254,8 @@ ul {
         line-height: 1.50;
         letter-spacing: 0.02em;
         color: #434455;
+        width: 264px;
+        height: 72px;
 }
 
 /* About */
@@ -220,7 +289,10 @@ ul {
 /* Team */
 
 .team {
-        background-color: #F4F4FD
+        background-color: #F4F4FD;
+        max-width: 1440px;
+        margin-left: auto;
+        margin-right: auto;
         
 }
 .team-title {
@@ -233,7 +305,7 @@ ul {
         text-transform: capitalize;
         color: var(--title-color);
         padding-top: 120px;
-        margin-bottom: 72px;
+        padding-bottom: 72px;
 }
 .team-list {
         display: flex;
@@ -265,11 +337,85 @@ ul {
         text-align: center;
         letter-spacing: 0.02em;
         color: #434455;
-        margin-bottom: 32px;
+        margin-bottom: 8px;
         
 }
+.team-soc-list {
+        display: flex;
+        justify-content: center;
+        gap: 24px;
+        padding-bottom: 32px;
+}
+
+.team-soc-item {
+        width: 40px;
+        height: 40px;
+}
+
+.team-soc-link {
+        width: 100%;
+        height: 100%;
+        background-color: #4D5AE5;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        fill: #F4F4FD;
+}
+.customers {
+        max-width: 1440px;
+        max-height: 450px;
+        margin-left: auto;
+        margin-right: auto;
+}
+.customers-logo{}
+
+.customers-title{
+        font-style: normal;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 40px;
+        text-align: center;
+        letter-spacing: 0.02em;
+        text-transform: capitalize;
+        color: #2E2F42;
+        padding-top: 130px;
+}
+.customers-list {
+        display: flex;
+        justify-content: center;
+        margin-top: 72px;
+        gap: 24px;
+        padding-bottom: 120px;
+}
+
+.customers-item {
+        width: 168px;
+        height: 88px;
+        border: 1px solid #8E8F99;
+        border-radius: 4px;
+}
+
+.customers-link {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+}
+
 .site-footer {
-        background: #2E2F42
+        height: 310px;
+        max-width: 1440px;
+        margin-left: auto;
+        margin-right: auto;
+        background: #2E2F42;
+        display: flex;
+        align-items: center;
+}
+.footer-content {
+        padding: 100px 0px 100px 156px;
+        
 }
 .logo-studio-link {
         font-family: 'Raleway', sans-serif;
@@ -278,11 +424,12 @@ ul {
         font-size: 18px;
         line-height: 1.17;
         display: flex;
+        width: 115px;
         align-items: center;
         letter-spacing: 0.03em;
         text-transform: uppercase;
         color: #4D5AE5;
-        padding-top: 100px;
+        
 }
 .studio-link {
         font-family: 'Raleway', sans-serif;
@@ -303,17 +450,54 @@ ul {
         line-height: 1.50;
         letter-spacing: 0.02em;
         color: #E7E9FC;
-        width: 264px;
+        max-width: 264px;
         margin-top: 16px;
-        padding-bottom: 100px;
 }
+.soc-media-content {
+        padding-top: 100px;
+        padding-right: 692px;
+        padding-bottom: 130px;
+        padding-left: 120px;
+        
+}
+.footer-soc-media {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 0.02em;
+        color: #FFFFFF;
+        margin-bottom: 16px;
+}
+.soc-media-list {
+        display: flex;
+        justify-content: center;
+        gap: 16px;
+}
+
+.soc-media-item {
+        width: 40px;
+        height: 40px;
+}
+
+.soc-media-link {
+        width: 100%;
+        height: 100%;
+        background-color: rgba(255, 255, 255, 0.1);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        fill: #F4F4FD;
+}
+
 /* Portfolio */
 
 /* Service navigation */
 
 .service-nav { 
-        margin-top: 96px;
-        margin-bottom: 72px;        
+        padding-top: 96px;
+        padding-bottom: 72px;        
 }
 .service-nav-list {
         display: flex;
@@ -326,7 +510,6 @@ ul {
 }
 
 .service-nav-btn {
-        font-family: 'Roboto', sans-serif; 
         font-style: normal;
         font-weight: 700;
         font-size: 16px;
@@ -363,9 +546,6 @@ ul {
         flex-direction: row;
         flex-wrap: wrap; 
 }
-
-.list {
-}
 .service-item {
         margin-right: 24px;
         margin-bottom: 48px;
@@ -379,7 +559,10 @@ ul {
 .text-border {
         border-left: 1px solid #E7E9FC;
         border-right: 1px solid #E7E9FC;
-        border-bottom: 1px solid #E7E9FC;  
+        border-bottom: 1px solid #E7E9FC;
+        box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
+        width: 360px;
+        height: 120px;
 }
 .service-title {
         font-style: normal;
@@ -388,10 +571,11 @@ ul {
         line-height: 1.20;
         letter-spacing: 0.02em;
         color: var(--title-color);
-        margin: 0px 0px 8px 16px;
+        margin-bottom: 8px;
         padding-top: 32px;
-}
+        padding-left: 16px;
 
+}
 .service-after-title {
         font-style: normal;
         font-weight: 400;
@@ -399,5 +583,6 @@ ul {
         line-height: 1.50;
         letter-spacing: 0.02em;
         color: #434455;
-        margin: 0px 0px 32px 16px;
+        padding-bottom: 32px;
+        padding-left: 16px;
 }
