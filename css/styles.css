@@ -167,13 +167,21 @@ ul,ol {
 /* Methodologies */
 .content {
         max-width: 1440px;
-        max-height: 450px;
         margin-left: auto;
         margin-right: auto;
 }
 .methodologies {     
 }
-
+.methodologies-icon{
+        display: flex;
+        background-color: #F4F4FD;
+        width: 264px;
+        height: 112px;
+        padding: 24px 102px;
+        border-radius: 4px;
+        margin-bottom: 8px;
+        
+}
 .methodologies-list { 
         display: flex;
         flex-direction: row;
@@ -181,61 +189,9 @@ ul,ol {
         margin-bottom: 120px;
         gap: 24px;
 }
-.icon-antena::before {
-        display: inline-block;
-        content:'';
-        width: 264px;
-        height: 112px;
-        background-color: #F4F4FD;
-        background-image: url(../icons/antenna.svg);
-        background-size: 64px;
-        background-repeat: no-repeat;
-        background-position: center;
-        border-radius: 4px;
-        margin-bottom: 8px;
 
-}
-.icon-clock::before {
-        display: inline-block;
-        content: '';
-        width: 264px;
-        height: 112px;
-        background-color: #F4F4FD;
-        background-image: url(../icons/clock.svg);
-        background-size: 64px;
-        background-repeat: no-repeat;
-        background-position: center;
-        border-radius: 4px;
-        margin-bottom: 8px;
-}
-.icon-diagram::before {
-        display: inline-block;
-        content: '';
-        width: 264px;
-        height: 112px;
-        background-color: #F4F4FD;
-        background-image: url(../icons/diagram.svg);
-        background-size: 64px;
-        background-repeat: no-repeat;
-        background-position: center;
-        border-radius: 4px;
-        margin-bottom: 8px;
-}
-.icon-astronaut::before {
-        display: inline-block;
-        content: '';
-        width: 264px;
-        height: 112px;
-        background-color: #F4F4FD;
-        background-image: url(../icons/astronaut.svg);
-        background-size: 64px;
-        background-repeat: no-repeat;
-        background-position: center;
-        border-radius: 4px;
-        margin-bottom: 8px;
-}
-.methodologies-item {
-}
+.methodologies-item {}
+
 .methodology-title {
         font-style: normal;
         font-weight: 700;
@@ -262,10 +218,9 @@ ul,ol {
 
 .about {
 }
-.container-about {
-        padding-left: 0;
-        padding-right: 0;
+.container-about {       
 }
+
 .about-title {
         font-style: normal;
         font-weight: 700;
@@ -280,8 +235,8 @@ ul,ol {
 .about-list {
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
         padding-bottom: 120px;
+        gap: 24px;
 }
 .about-item {
 }
@@ -364,7 +319,6 @@ ul,ol {
 }
 .customers {
         max-width: 1440px;
-        max-height: 450px;
         margin-left: auto;
         margin-right: auto;
 }
