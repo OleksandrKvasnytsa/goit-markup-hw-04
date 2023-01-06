@@ -41,6 +41,10 @@ ul,ol {
         display: flex;
         background-color: #FFFFFF;
         border-bottom: 1px solid #E7E9FC;
+        box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
+        max-width: 1440px;
+        margin-left: auto;
+        margin-right: auto;
 }
 .header-container {
         display: flex;
@@ -94,6 +98,13 @@ ul,ol {
         letter-spacing: 0.02em;
         color: #2E2F42;
 }
+.header-link:hover,
+.header-link:focus {
+        color: #434455;
+}
+.header-link:active {
+        color: #4D5AE5;
+}
 .contact-info {
         margin-left: auto;
 }
@@ -106,7 +117,7 @@ ul,ol {
         margin-right: 40px;
 }
 .header-mail:hover {
-    color: skyblue;
+    color: #4D5AE5;
 }
 .header-tel {
     font-weight: 400;
@@ -116,7 +127,7 @@ ul,ol {
         color: #434455;
 }
 .header-tel:hover {
-    color: skyblue;
+    color: #4D5AE5;
 }
 
 /* Slogan */
@@ -160,8 +171,16 @@ ul,ol {
         color: #FFFFFF;
         background-color: #4D5AE5;
         cursor: pointer;
-        
-        
+        border-radius: 4px;
+        border: none;
+}
+.slogan-btn:focus,
+.slogan-btn:hover {
+        box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+.slogan-btn:active {
+        background-color: #404BBF;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 /* Methodologies */
@@ -317,6 +336,10 @@ ul,ol {
         justify-content: center;
         fill: #F4F4FD;
 }
+.team-soc-link:hover,
+.team-soc-link:focus {
+        background-color: #404BBF;
+}
 .customers {
         max-width: 1440px;
         margin-left: auto;
@@ -350,13 +373,25 @@ ul,ol {
         border-radius: 4px;
 }
 
+.customers-item:hover,
+.customers-item:focus {
+        border: 1px solid #4D5AE5;
+        border-radius: 4px;
+}
 .customers-link {
         width: 100%;
         height: 100%;
         display: flex;
         align-items: center;
         justify-content: center;
+        fill: #AFB1B8;
 }
+
+.customers-link:hover,
+.customers-link:focus {
+        fill: #4D5AE5;       
+}
+
 
 .site-footer {
         height: 310px;
@@ -437,12 +472,17 @@ ul,ol {
 .soc-media-link {
         width: 100%;
         height: 100%;
-        background-color: rgba(255, 255, 255, 0.1);
+        background-color: rgba(255, 255, 255, 0.1);;
         border-radius: 50%;
         display: flex;
         align-items: center;
         justify-content: center;
         fill: #F4F4FD;
+}
+
+.soc-media-link:hover,
+.soc-media-link:focus {
+        background-color: #31D0AA;
 }
 
 /* Portfolio */
@@ -484,9 +524,11 @@ ul,ol {
         min-height: 48px;
 }
 
-.service-nav-btn:hover {
+.service-nav-btn:hover,
+.service-nav-btn:focus {
     color: #FFFFFF;
-    background-color: #4D5AE5;    
+    background-color: #4D5AE5;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 .service {      
         background-color: #FFFFFF;
@@ -504,6 +546,10 @@ ul,ol {
         margin-right: 24px;
         margin-bottom: 48px;
 }
+.service-item:hover,
+.service-item:focus {
+        box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
 .service-item:nth-child(3n) {
         margin-right: 0;
 }
@@ -518,6 +564,7 @@ ul,ol {
         width: 360px;
         height: 120px;
 }
+
 .service-title {
         font-style: normal;
         font-weight: 600;
