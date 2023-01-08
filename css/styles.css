@@ -42,9 +42,7 @@ ul,ol {
         background-color: #FFFFFF;
         border-bottom: 1px solid #E7E9FC;
         box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
-        max-width: 1440px;
-        margin-left: auto;
-        margin-right: auto;
+        
 }
 .header-container {
         display: flex;
@@ -134,7 +132,7 @@ ul,ol {
 
 .slogan {
         height: 600px;
-        max-width: 1440px;
+        width: 1440px;
         margin-left: auto;
         margin-right: auto;
         text-align: center;
@@ -184,12 +182,12 @@ ul,ol {
 }
 
 /* Methodologies */
-.content {
-        max-width: 1440px;
-        margin-left: auto;
-        margin-right: auto;
+.content {  
+          
 }
-.methodologies {     
+.methodologies {
+        padding-top: 120px;
+        padding-bottom: 120px;      
 }
 .methodologies-icon{
         display: flex;
@@ -204,8 +202,7 @@ ul,ol {
 .methodologies-list { 
         display: flex;
         flex-direction: row;
-        margin-top: 120px;
-        margin-bottom: 120px;
+        
         gap: 24px;
 }
 
@@ -236,6 +233,7 @@ ul,ol {
 /* About */
 
 .about {
+        padding-bottom: 120px;
 }
 .container-about {       
 }
@@ -254,7 +252,7 @@ ul,ol {
 .about-list {
         display: flex;
         flex-direction: row;
-        padding-bottom: 120px;
+        
         gap: 24px;
 }
 .about-item {
@@ -264,9 +262,8 @@ ul,ol {
 
 .team {
         background-color: #F4F4FD;
-        max-width: 1440px;
-        margin-left: auto;
-        margin-right: auto;
+        padding-top: 120px;
+        padding-bottom: 110px;
         
 }
 .team-title {
@@ -278,14 +275,11 @@ ul,ol {
         letter-spacing: 0.02em;
         text-transform: capitalize;
         color: var(--title-color);
-        padding-top: 120px;
-        padding-bottom: 72px;
+        margin-bottom: 72px;
 }
 .team-list {
         display: flex;
         gap: 24px;
-        padding-bottom: 152px;
-        
 }
 .team-item {
         background-color: #FFFFFF;
@@ -341,9 +335,8 @@ ul,ol {
         background-color: #404BBF;
 }
 .customers {
-        max-width: 1440px;
-        margin-left: auto;
-        margin-right: auto;
+        padding-top: 130px;
+        padding-bottom: 120px;
 }
 .customers-logo{}
 
@@ -356,14 +349,12 @@ ul,ol {
         letter-spacing: 0.02em;
         text-transform: capitalize;
         color: #2E2F42;
-        padding-top: 130px;
 }
 .customers-list {
         display: flex;
         justify-content: center;
         margin-top: 72px;
         gap: 24px;
-        padding-bottom: 120px;
 }
 
 .customers-item {
@@ -394,17 +385,17 @@ ul,ol {
 
 
 .site-footer {
-        height: 310px;
-        max-width: 1440px;
-        margin-left: auto;
-        margin-right: auto;
         background: #2E2F42;
-        display: flex;
-        align-items: center;
+        padding-top: 100px;
+        padding-bottom: 100px;
 }
-.footer-content {
-        padding: 100px 0px 100px 156px;
-        
+.footer-list {
+        display: flex;
+}
+.footer-item {
+        display: inline-block;
+        width: 264px;
+        margin-right: 120px;   
 }
 .logo-studio-link {
         font-family: 'Raleway', sans-serif;
@@ -439,15 +430,11 @@ ul,ol {
         line-height: 1.50;
         letter-spacing: 0.02em;
         color: #E7E9FC;
-        max-width: 264px;
         margin-top: 16px;
 }
 .soc-media-content {
-        padding-top: 100px;
-        padding-right: 692px;
-        padding-bottom: 130px;
-        padding-left: 120px;
-        
+        display: inline-block;
+        width: 208px;
 }
 .footer-soc-media {
         font-style: normal;
@@ -489,15 +476,18 @@ ul,ol {
 
 /* Service navigation */
 
-.service-nav { 
+.portfolio-content {
         padding-top: 96px;
-        padding-bottom: 72px;        
+        padding-bottom: 120px;
+}
+.service-nav {      
 }
 .service-nav-list {
         display: flex;
         flex-direction: row;
         justify-content: center;
-        gap: 24px
+        gap: 24px;
+        margin-bottom: 76px;
 }
 
 .service-nav-item {
@@ -533,8 +523,7 @@ ul,ol {
 .service {      
         background-color: #FFFFFF;
 }
-.container-service {     
-        padding-bottom: 120px;
+.container-service {
 }
 
 .service-list {
@@ -562,7 +551,7 @@ ul,ol {
         border-bottom: 1px solid #E7E9FC;
         box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
         width: 360px;
-        height: 120px;
+        
 }
 
 .service-title {
